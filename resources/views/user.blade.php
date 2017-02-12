@@ -1,6 +1,6 @@
 @extends('layouts.app')
-
 @section('content')
+    <link href="{{{ asset('/css/style.css') }}}" rel="stylesheet">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -19,7 +19,8 @@
                             <h3>Vos articles</h3>
                             <ul>
                                 @forelse(Auth::user()->articles as $article)
-                                    <li><a href="{{ route('article.show', $article->id) }}">{{ $article->title }}</a></li>
+                                    <li><a href="{{ route('article.show', $article->id) }}">{{ $article->title }}</a>
+                                    </li>
                                 @empty
                                     Vous n'avez pas encore publié d'article.
                                 @endforelse
