@@ -19,6 +19,10 @@
                             <div class="form-group">
                                 <textarea name="content" placeholder="Votre contenu" class="form-control"></textarea>
                             </div>
+                            <div class="form-group">
+                                <textarea name="image" placeholder="Le lien de votre image" class="form-control"></textarea>
+                            </div>
+                            <label for="image">Séléctionnez une image pour votre article</label> <br>
 
                             <input type="submit" value="Publier" class="btn btn-info">
                         </form>

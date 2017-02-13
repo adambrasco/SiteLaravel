@@ -8,6 +8,7 @@
                     <div class="panel-heading">{{ $article->title }}</div>
                     <div class="panel-body">
                         {{ $article->content }}
+                        <img src="{{ $article->image }}" />
 
                         <br>
                         <br>

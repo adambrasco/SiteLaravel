@@ -25,6 +25,10 @@
                                 <textarea name="content" placeholder="Votre contenu"
                                           class="form-control">{{ $article->content }}</textarea>
                             </div>
+                            <div class="form-group">
+                                <textarea name="image" placeholder="Votre image"
+                                          class="form-control">{{ $article->image }}</textarea>
+                            </div>
 
                             <input type="submit" value="Publier" class="btn btn-info">
                         </form>

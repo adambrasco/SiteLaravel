@@ -18,6 +18,7 @@ class CreateArticlesTable extends Migration
             $table->string('title');
             $table->longText('content');
             $table->integer('user_id')->unsigned();
+            $table->longText('image');
             $table->timestamps();
         });
     }

@@ -28,5 +28,6 @@ $factory->define(App\Article::class, function (Faker\Generator $faker) {
         'title' => $faker->company,
         'content' => $faker->text(200),
         'user_id' => $faker->numberBetween(1, 20),
+        'image' =>$faker->imageUrl($width = 256, $height = 256),
     ];
 });

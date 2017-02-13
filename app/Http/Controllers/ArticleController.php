@@ -12,6 +12,7 @@ class ArticleController extends Controller
     {
         $this->middleware('auth')->except('show', 'index');
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -45,14 +46,14 @@ class ArticleController extends Controller
         $this->validate($request,
             [
                 'title' => 'required|min:5',
-                'content' => 'required|min:10'
+                'content' => 'required|min:10',
             ],
             [
                 'title.required' => 'Titre requis',
                 'title.min' => 'Minimum 5 caractères',
 
                 'content.required' => 'Contenu requis',
-                'content.min' => 'Minimum 10 caractères'
+                'content.min' => 'Minimum 10 caractères',
             ]);
 
         $article = new Article();
@@ -102,14 +103,16 @@ class ArticleController extends Controller
         $this->validate($request,
             [
                 'title' => 'required|min:5',
-                'content' => 'required|min:10'
+                'content' => 'required|min:10',
             ],
             [
                 'title.required' => 'Titre requis',
                 'title.min' => 'Minimum 5 caractères',
 
                 'content.required' => 'Contenu requis',
-                'content.min' => 'Minimum 10 caractères'
+                'content.min' => 'Minimum 10 caractères',
+
+
             ]);
 
         $article = Article::find($id);
