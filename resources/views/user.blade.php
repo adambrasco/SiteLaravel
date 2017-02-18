@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <link href="{{{ asset('/css/style.css') }}}" rel="stylesheet">
+    <link href="{{ asset('/css/style.css') }}}" rel="stylesheet">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -11,9 +11,9 @@
                         @if(Auth::check())
                             <h3>Vos informations</h3>
                             <ul>
-                                <li>{{ Auth::user()->name }}</li>
-                                <li>{{ Auth::user()->email }}</li>
-                                <li>{{ Auth::user()->created_at }}</li>
+                                <li><a1>Pseudonyme : </a1> {{ Auth::user()->name }}</li>
+                                <li><a1>Adresse email : </a1>{{ Auth::user()->email }}</li>
+                                <li><a1>Date création du compte : </a1>{{ Auth::user()->created_at }}</li>
                             </ul>
 
                             <h3>Vos articles</h3>
