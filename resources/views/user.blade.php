@@ -11,9 +11,9 @@
                         @if(Auth::check())
                             <h3>Vos informations</h3>
                             <ul>
-                                <li><a1>Pseudonyme : </a1> {{ Auth::user()->name }}</li>
-                                <li><a1>Adresse email : </a1>{{ Auth::user()->email }}</li>
-                                <li><a1>Date création du compte : </a1>{{ Auth::user()->created_at }}</li>
+                                <li><a>Pseudonyme : </a> {{ Auth::user()->name }}</li>
+                                <li><a>Adresse email : </a>{{ Auth::user()->email }}</li>
+                                <li><a>Date création du compte : </a>{{ Auth::user()->created_at }}</li>
                             </ul>
 
                             <h3>Vos articles</h3>

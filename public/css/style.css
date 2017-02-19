@@ -1,3 +1,16 @@
-#app{
-    background-color: red;
+
+body {
+    background-color: white!important;
+}
+
+.panel-body {
+    background-color: #FCFFFF;
+}
+
+.panel-heading {
+    background-color: #00FFC0 !important;
+}
+
+.nav {
+    background-color: #00FFC0 !important;
 }
