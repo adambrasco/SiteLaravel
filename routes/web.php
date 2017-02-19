@@ -29,8 +29,6 @@ Route::get('/admin', function() {
     return view('admin');
 });
 
-Route::get('contact',
-    ['as' => 'contact', 'uses' => 'AboutController@create']);
+Route::get('contact', 'ContactController@getContact');
 
-Route::post('contact',
-    ['as' => 'contact_store', 'uses' => 'AboutController@store']);
+Route::post('contact', 'ContactController@postContact');
